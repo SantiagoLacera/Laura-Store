@@ -1,3 +1,9 @@
+---
+import { Image } from 'astro:assets';
+// Import a reference to the image itself
+import Logo from '../assets/LL.png';
+---
+
 <div class="navbar bg-base-100">
   <div class="navbar-start" id="nav">
     <div class="dropdown">
@@ -31,13 +37,7 @@
       </ul>
     </div>
     <div>
-      <img
-        class="hidden lg:block"
-        src="../assets/LL.png"
-        width="150px"
-        height="150px"
-        alt="logo"
-      />
+      <Image src={Logo} alt="Logo" class="hidden lg:block w-52" />
     </div>
   </div>
   <div class="navbar-center hidden lg:flex">

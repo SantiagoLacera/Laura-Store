@@ -1,7 +1,16 @@
+---
+import { Image } from 'astro:assets';
+// Import a reference to the image itself
+import Fresas from '../assets/strawberry.jpg';
+import Fresas2 from '../assets/strawberry2.jpg';
+import Galleta from '../assets/cookie.webp';
+import Galleta2 from '../assets/stack-cookie.jpg';
+---
+
 <div class="flex justify-center gap-10 py-10">
   <div class="card max-w-96 max-h-[600px] bg-base-100 shadow-xl">
     <figure>
-      <img src="../assets/strawberry.jpg" alt="Shoes" />
+      <Image src={Fresas} alt="Fresas" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">Fresas con Avena!</h2>
@@ -13,7 +22,7 @@
   </div>
   <div class="card w-96 max-h-[600px] bg-base-100 shadow-xl">
     <figure>
-      <img src="../assets/strawberry2.jpg" alt="Shoes" />
+      <Image src={Fresas2} alt="Fresas Combo" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">(3x) Fresas con Avena!</h2>
@@ -27,7 +36,7 @@
 <div class="flex justify-center gap-10">
   <div class="card w-96 max-h-[600px] bg-base-100 shadow-xl">
     <figure>
-      <img src="../assets/cookie.webp" alt="Shoes" />
+      <Image src={Galleta} alt="Galleta" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">Galleta</h2>
@@ -42,7 +51,7 @@
   </div>
   <div class="card w-96 max-h-[600px] bg-base-100 shadow-xl">
     <figure>
-      <img src="../assets/stack-cookie.jpg" alt="Shoes" />
+      <Image src={Galleta2} alt="Galletas Combo" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">(7x)Pack de Galletas</h2>
